@@ -103,6 +103,13 @@ body {
   list-style: none;
 }
 
+.sidebar ul li.active {
+  background: white;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+
+}
+
 .sidebar ul li.logo {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -133,6 +140,10 @@ body {
   color: white;
 }
 
+.sidebar ul li.active a .icon {
+  color: rgb(158, 95, 95);
+}
+
 .sidebar ul li a .text {
   position: relative;
   height: 50px;
@@ -146,8 +157,21 @@ body {
   transition: 0.5s;
 }
 
-.sidebar ul li:hover a .icon,
-.sidebar ul li:hover a .text {
-  color: rgb(226, 166, 166);
-  
+.sidebar ul li.active a .text {
+  color: rgb(158, 95, 95);
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar ul li.logo .text {
+    font-size: 3.5em;
+    letter-spacing: 30px;
+  }
+
+  .sidebar.active ul li.logo .text {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+  }
 }
