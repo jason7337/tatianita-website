@@ -27,6 +27,7 @@
 body {
   min-height: 100vh;
   background: var(--clr);
+  
 }
 
 .menuToggle {
@@ -81,7 +82,7 @@ body {
 .sidebar {
   position: absolute;
   width: 0px;
-  height: 110vh;
+  height: 100vh;
   background: rgb(158, 95, 95);
   transition: 0.5s;
   padding-left: 0px;
@@ -178,8 +179,10 @@ body {
 .container {
   padding-top: 60px;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .container .title {
