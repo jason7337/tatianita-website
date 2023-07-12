@@ -208,6 +208,8 @@ body {
 }
 
 .container .content .image img {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
