@@ -86,7 +86,8 @@ body {
   background: rgb(158, 95, 95);
   transition: 0.5s;
   padding-left: 0px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .sidebar.active {
